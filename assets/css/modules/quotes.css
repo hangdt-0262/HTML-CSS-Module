@@ -1,0 +1,50 @@
+.quotes__container {
+  margin: 0 auto;
+  display: flex;
+}
+
+.quotes__quote {
+  padding: 0 15px;
+}
+
+.quotes__text {
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: Milliard Book Italic;
+}
+
+.quotes__text::before {
+  color: #ad8026;
+  font-size: 44px;
+  vertical-align: middle;
+  line-height: 100%;
+  line-height: 26px;
+  padding: 0 1px 0 0;
+  margin-left: -20px;
+  content: "\201C";
+  font-family: Zangezi;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quotes__author {
+  color: #7f7f7f;
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .quotes__container {
+    flex-wrap: wrap;
+  }
+
+  .quotes__quote {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

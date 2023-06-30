@@ -1,0 +1,247 @@
+.banner {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 5px;
+  text-align: center;
+}
+
+.banner__content {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navbar {
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 70px;
+  display: flex;
+  background-color: var(--white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+}
+
+.navbar__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1090px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  height: auto;
+  width: 200px;
+}
+
+.navbar__links {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar__link {
+  padding: 0 12px;
+  line-height: 51px;
+  margin: 9px 5px 0 0;
+  font-weight: 500;
+  font-family: Milliard Medium;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navbar__link:hover {
+  padding-bottom: 16px;
+  border-bottom: 9px solid black;
+}
+
+.navbar__icon-buttons {
+  display: none;
+}
+
+.navbar__buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+.welcome-banner {
+  background-image: url("../../images/fall-salmon-box-lg@2x.jpg");
+  width: 100%;
+  height: 520px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1680px auto;
+}
+
+.welcome-banner__container {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.welcome-banner__content {
+  max-width: 430px;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.welcome-banner__head {
+  font-size: 60px;
+  font-family: Zangezi;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  margin-bottom: 0.35em;
+  color: var(--white);
+  line-height: 100%;
+}
+
+.welcome-banner__subhead {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  color: var(--white);
+}
+
+@media screen and (max-width: 1023px) {
+  .welcome-banner {
+    background-position: 80% 50%;
+  }
+
+  .welcome-banner__container {
+    padding: 0 15px;
+  }
+
+  .welcome-banner__content {
+    max-width: 450px;
+    float: left;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar__links {
+    transform: translateX(175px);
+    margin-left: 20px;
+  }
+
+  .navbar__logo {
+    left: 0;
+    transform: translateX(15px);
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__content {
+    font-size: 15px;
+    margin-right: 0;
+  }
+
+  .banner .button {
+    display: none;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .navbar {
+    min-height: 50.6px;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__buttons {
+    display: none;
+  }
+
+  .navbar__icon-buttons {
+    display: flex;
+    right: 0;
+    position: absolute;
+  }
+
+  .navbar__icon-button {
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 11px 15px 12px
+  }
+
+  .navbar__icon-button--rice {
+    background-image: url(../../images/icons/rice.png);
+    width: 24.8px;
+  }
+
+  .navbar__icon-button--rice:hover {
+    background-image: url(../../images/icons/rice-hover.png);
+  }
+
+  .navbar__icon-button--menu {
+    background-image: url(../../images/icons/menu.png);
+    width: 22px;
+  }
+
+  .navbar__icon-button--menu:hover {
+    background-image: url(../../images/icons/menu-hover.png);
+  }
+
+  .welcome-banner {
+    background: none;
+    background-color: var(--module-bg-color);
+    height: fit-content;
+  }
+
+  .welcome-banner::before {
+    content: "";
+    height: 320px;
+    width: 100%;
+    display: block;
+    background-image: url(../../images/fall-salmon-box-sm@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .welcome-banner__container {
+    display: flex;
+  }
+
+  .welcome-banner__content {
+    max-width: 620px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .welcome-banner__head {
+    color: var(--black);
+    text-align: center;
+    font-size: 45px;
+  }
+  .welcome-banner__subhead {
+    color: var(--black);
+    text-align: center;
+  }
+  .welcome-banner__action {
+    margin: 0 auto;
+  }
+}

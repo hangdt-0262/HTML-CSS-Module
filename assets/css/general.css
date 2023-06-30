@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Milliard Book";
+  src: url("../fonts/Milliard-Book.ttf");
+}
+
+@font-face {
+  font-family: "Milliard Medium";
+  src: url("../fonts/Milliard-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Milliard Book Italic";
+  src: url("../fonts/Milliard-BookItalic.ttf");
+}
+
+@font-face {
+  font-family: "Zangezi";
+  src: url("../fonts/Zangezi-Regular.otf");
+}
+
+:root {
+  --primary-color: #ffe849;
+  --secondary-color: #f9b75d;
+  --module-bg-color: #f4f2ed;
+  --white: white;
+  --black: black;
+}
+
+body {
+  font-family: "Milliard Book";
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  color: var(--black);
+  line-height: 1.4;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+footer {
+  display: flex;
+  border-top: 1px solid #ccc;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0 5px;
+}
+
+.module {
+  padding: 50px 0;
+}
+
+.li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: underline;
+  display: block;
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.link--no-underline {
+  text-decoration: none;
+}
+
+.link--no-underline:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

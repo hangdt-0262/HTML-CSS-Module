@@ -1,0 +1,13 @@
+.img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.img--circle {
+  border-radius: 50%;
+}
+
+.img--chevron-icon {
+  height: 14px;
+  width: fit-content;
+}

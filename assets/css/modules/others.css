@@ -1,0 +1,32 @@
+.others {
+  align-items: flex-start;
+}
+
+.others__container {
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.others__item {
+  flex: 0 0 230px;
+  padding: 0 15px;
+}
+
+.others__img {
+  height: 32px;
+}
+
+.others__text {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+@media (max-width: 728px) {
+  .others__item {
+    margin-bottom: 20px;
+  }
+}
