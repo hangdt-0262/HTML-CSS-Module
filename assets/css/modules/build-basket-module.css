@@ -1,22 +1,31 @@
-.build-basket-module {
-  background-image: url("../../images/footer-getstarted@2x.jpg");
+.build-basket {
+  background-image: url("../../images/Build-your-Basket_bg@2x.jpg");
   background-size: cover;
   height: 400px;
   background-repeat: no-repeat;
   background-position: 30% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.build-basket-module__content {
+.build-basket__content {
   max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   color: white;
 }
 
-.build-basket-module__head {
+.build-basket__head {
   font-family: Zangezi;
   font-size: 42px;
   font-weight: 400;
@@ -26,30 +35,35 @@
   text-align: center;
 }
 
-.build-basket-module__button {
+.build-basket__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
 }
 
-.build-basket-module__subhead {
+.build-basket__subhead {
   font-size: 14px;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
 
-.build-basket-module__subhead .link {
+.build-basket__subhead .link {
   display: inline;
+  color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
-  .build-basket-module {
-    background-image: url("../../images/footer-getstarted-4x5@2x.jpg");
+  .build-basket {
+    background-image: url("../../images/Build-your-Basket_bg-4x5@2x.jpg");
     height: 480px;
     max-height: 480px;
   }
 
-  .build-basket-module__content {
+  .build-basket__content {
     padding: 50px 20px;
     background-color: white;
     color: black;

@@ -1,8 +1,8 @@
-.checkout-module {
+.checkout {
   position: relative;
 }
 
-.checkout-module__head {
+.checkout__head {
   margin-bottom: 20px;
   margin-top: 20px;
   line-height: 110%;
@@ -13,23 +13,24 @@
   font-weight: 400;
 }
 
-.checkout-module__subhead {
+.checkout__subhead {
   margin-bottom: 40px;
   margin-top: 0;
   line-height: 1.5;
 }
 
-.checkout-module__slider-item {
+.checkout__slider-item {
   width: 100% !important;
   padding: 0 !important;
 }
 
-.checkout-module__slider-item-img {
+.checkout__slider-item-img {
   height: 450px;
-  object-fit: cover !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
-.checkout-module__content {
+.checkout__content {
   z-index: 20;
   position: absolute;
   top: 50px;
@@ -40,7 +41,7 @@
 }
 
 @media (max-width: 1023px) {
-  .checkout-module__content {
+  .checkout__content {
     left: calc(50% - 380px);
     margin: 0;
     max-width: 320px;
@@ -48,33 +49,47 @@
 }
 
 @media (max-width: 768px) {
-  .checkout-module {
+  .checkout {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
   }
 
-  .checkout-module__content {
+  .checkout__content {
     position: static;
     max-width: 100%;
     padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
-  .checkout-module__content .button {
+  .checkout__content .button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
 
-  .checkout-module__head {
+  .checkout__head {
     text-align: center;
   }
 
-  .checkout-module__subhead {
+  .checkout__subhead {
     text-align: center;
   }
 
-  .checkout-module__slider-item-img {
+  .checkout__slider-item-img {
     height: 250px;
   }
 }

@@ -1,17 +1,21 @@
-.custom-menu-module {
-  background-color: var(--module-bg-color);
+.custom-menu {
+  background-color: var(--bg-color);
   padding: 50px 0;
 }
 
-.custom-menu-module__container {
+.custom-menu__container {
   padding: 0 15px;
   max-width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
 
-.custom-menu-module__prehead {
+.custom-menu__prehead {
   font-size: 20px;
   line-height: 1.15;
   margin-bottom: 5px;
@@ -19,7 +23,7 @@
   font-weight: 400;
 }
 
-.custom-menu-module__head {
+.custom-menu__head {
   font-size: 42px;
   font-family: Zangezi;
   font-weight: 400;
@@ -28,67 +32,77 @@
   margin-bottom: 20px;
 }
 
-.custom-menu-module__subhead {
+.custom-menu__subhead {
   margin-top: 20px;
   margin-bottom: 40px;
   line-height: 1.15;
 }
 
-.custom-menu-module__meal-plan-description {
-  flex: 0 0 calc(360px - 30px);
+.custom-menu__description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(360px - 30px);
+          flex: 0 0 calc(360px - 30px);
   padding: 0 15px;
 }
 
-.custom-menu-module__meal-plan-list .button {
+.custom-menu__list .button {
   display: none;
 }
 
-.custom-menu-module__meal-plan-description__pre-head {
+.custom-menu__description__pre-head {
   font-family: Zangezi;
   margin-bottom: 5px;
 }
 
-.custom-menu-module__meal-plan-description__subhead {
+.custom-menu__description__subhead {
   margin-top: 20px;
   margin-bottom: 40px;
   line-height: 1.15;
 }
 
-.custom-menu-module__meal-plan-description__head {
+.custom-menu__description__head {
   font-family: Zangezi;
   line-height: 1.5;
 }
 
-.custom-menu-module__meal-plan-list {
+.custom-menu__list {
   padding: 0 15px;
-  flex: 0 0 calc(200px - 30px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(200px - 30px);
+          flex: 0 0 calc(200px - 30px);
 }
 
-.custom-menu-module__meal-plan-list-link {
+.custom-menu__list-link {
   display: block;
   margin-bottom: 5px;
 }
 
-.custom-menu-module__meal-plan-list-link-icon {
-  color: #ad8026;
+.custom-menu__list-link-icon {
+  color: var(--icon-color);
   margin-right: 4px;
   font-size: 15px;
 }
 
-.custom-menu-module__meal-plan-photos {
+.custom-menu__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: calc(425px - 30px);
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -50px -3px -50px 0;
   padding: 0 15px;
 }
 
-.custom-menu-module__meal-plan-photos-left-photo {
+.custom-menu__photos-left-photo {
   width: 230px !important;
 }
 
-.custom-menu-module__meal-plan-photos-right {
+.custom-menu__photos-right {
   width: 178px;
   display: grid;
   grid-auto-rows: auto;
@@ -96,74 +110,92 @@
   margin-left: 6px;
 }
 
-.custom-menu-module__meal-plan-photos-right-photo {
+.custom-menu__photos-right-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 153px;
 }
 
 @media (max-width: 992px) {
-  .custom-menu-module__container {
-    flex-wrap: wrap;
+  .custom-menu__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
-  .custom-menu-module__meal-plan-photos {
-    order: -1;
+  .custom-menu__photos {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     width: 100%;
     margin: -50px 0 40px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .custom-menu-module__meal-plan-photos-right-photo,
-  .custom-menu-module__meal-plan-photos-left-photo {
+  .custom-menu__photos-right-photo,
+  .custom-menu__photos-left-photo {
     height: 304px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
     width: fit-content !important;
   }
 
-  .custom-menu-module__meal-plan-photos-right {
+  .custom-menu__photos-right {
     grid-template-columns: 1fr 1fr;
-    column-gap: 6px;
+    -webkit-column-gap: 6px;
+       -moz-column-gap: 6px;
+            column-gap: 6px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     grid-column: 2 / span 2;
   }
 
-  .custom-menu-module__meal-plan-photos-left {
+  .custom-menu__photos-left {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
     width: fit-content !important;
+    margin-right: 0;
+    margin-left: auto;
   }
 
-  .custom-menu-module__meal-plan-photos-right-photo .img,
-  .custom-menu-module__meal-plan-photos-left-photo .img {
+  .custom-menu__photos-right-photo .img,
+  .custom-menu__photos-left-photo .img {
     height: 100%;
     max-width: 208px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
 @media (max-width: 768px) {
-  .custom-menu-module__head {
+  .custom-menu__head {
     font-size: 36px;
   }
 
-  .custom-menu-module__subhead {
+  .custom-menu__subhead {
     margin-bottom: 20px;
   }
 
-  .custom-menu-module__meal-plan-description,
-  .custom-menu-module__meal-plan-list {
-    flex: 0 1 auto;
+  .custom-menu__description,
+  .custom-menu__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     max-width: 440px;
   }
 
-  .custom-menu-module__meal-plan-description .button {
+  .custom-menu__description .button {
     display: none;
   }
 
-  .custom-menu-module__meal-plan-list .button {
+  .custom-menu__list .button {
     display: inline-block;
     margin-top: 20px;
   }
 
-  .custom-menu-module__meal-plan-list-item {
+  .custom-menu__list-item {
     width: calc(50% - 15px);
     float: left;
   }

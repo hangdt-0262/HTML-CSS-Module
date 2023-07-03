@@ -1,36 +1,38 @@
-.effect-module__container {
+.effect__container {
   padding: 20px 0 30px;
   margin: 0 auto;
 }
 
-.effect-module__list {
+.effect__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 88%;
   margin: 0 auto;
 }
 
-.effect-module__item {
+.effect__item {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.effect-module__item .link {
+.effect__item .link {
   display: inline;
 }
 
-.effect-module__item--flavor {
+.effect__item--flavor {
   width: calc(31% - 30px);
 }
 
-.effect-module__item--organic {
+.effect__item--organic {
   width: calc(38% - 30px);
 }
 
-.effect-module__item--menu {
+.effect__item--menu {
   width: calc(31% - 30px);
 }
 
-.effect-module__head {
+.effect__head {
   margin-top: 2px;
   margin-bottom: 5px;
   line-height: 1.5;
@@ -39,78 +41,100 @@
   font-weight: 400;
 }
 
-.effect-module__subhead {
+.effect__subhead {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
 
-.effect-module__content {
+.effect__content {
   text-align: center;
 }
 
-.effect-module__photo {
+.effect__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 210px;
 }
 
-.effect-module__img {
+.effect__img {
   width: 160px !important;
   height: 160px !important;
-  object-fit: cover !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
   display: inline-block;
   padding: 40px 20px 10px;
 }
 
-.effect-module__img--usda-organic-seal {
+.effect__img--usda-organic-seal {
   width: 110px !important;
   height: 110px !important;
 }
 
 @media (max-width: 992px) {
-  .kit-options-module__img {
+  .kit-options__img {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .effect-module__list {
-    flex-wrap: wrap;
+  .effect__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
   }
 
-  .effect-module__item {
+  .effect__item {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
-  .effect-module__photo {
+  .effect__photo {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 
-  .effect-module__img {
+  .effect__img {
     width: 125px !important;
     height: 125px !important;
     padding: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
-  .effect-module__item--organic {
-    order: -1;
+  .effect__item--organic {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 
-  .effect-module__img--usda-organic-seal {
+  .effect__img--usda-organic-seal {
     width: 95px !important;
     height: 95px !important;
     padding: 15px;
   }
 
-  .effect-module__content {
+  .effect__content {
     text-align: left;
     padding-left: 12px;
   }

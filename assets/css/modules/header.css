@@ -1,8 +1,14 @@
 .banner {
   background-color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 5px;
   text-align: center;
 }
@@ -18,16 +24,25 @@
   padding-left: 15px;
   padding-right: 15px;
   min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: var(--white);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
 }
 
 .navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1090px;
   margin: 0 auto;
   padding-right: 15px;
@@ -37,7 +52,9 @@
 .navbar__logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .logo {
@@ -73,7 +90,9 @@
 .navbar__buttons {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 10px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .welcome-banner {
@@ -95,9 +114,16 @@
   text-align: center;
   margin: 0 auto;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 15px;
 }
 
@@ -138,13 +164,17 @@
 
 @media screen and (max-width: 992px) {
   .navbar__links {
-    transform: translateX(175px);
+    -webkit-transform: translateX(175px);
+        -ms-transform: translateX(175px);
+            transform: translateX(175px);
     margin-left: 20px;
   }
 
   .navbar__logo {
     left: 0;
-    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+            transform: translateX(15px);
     width: 300px;
   }
 }
@@ -176,6 +206,8 @@
   }
 
   .navbar__icon-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     right: 0;
     position: absolute;
@@ -209,6 +241,8 @@
   .welcome-banner {
     background: none;
     background-color: var(--module-bg-color);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 
@@ -224,6 +258,8 @@
   }
 
   .welcome-banner__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 

@@ -22,8 +22,18 @@
   --primary-color: #ffe849;
   --secondary-color: #f9b75d;
   --module-bg-color: #f4f2ed;
+  --secondary-text-color: #7f7f7f;
+  --icon-color: #ad8026;
+  --facebook-color: #3b5998;
+  --instagram-color: #fb3958;
+  --twitter-color: #0084ff;
+  --pinterest-color: #c8232c;
+  --tiktok-color: #fe2c55;
+  --primary-tag-bg-color: #f9988f;
+  --hard-red: #5e0b2d;
   --white: white;
   --black: black;
+  --grey: #ccc;
 }
 
 body {
@@ -36,16 +46,24 @@ body {
 }
 
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid #ccc;
-  flex-direction: column;
-  align-items: center;
+  border-top: 1px solid var(--grey);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 45px 0 5px;
 }
 

@@ -18,17 +18,21 @@
 }
 
 .button--primary:hover {
-  background-color: #f9b75d;
-  transition-duration: 300ms;
+  background-color: var(--secondary-color);
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .button--outline {
-  border: 1px solid #ccc;
+  border: 1px solid var(--grey);
 }
 
 .button--outline:hover {
   border-color: var(--black);
-  transition-duration: 300ms;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .button--lg {

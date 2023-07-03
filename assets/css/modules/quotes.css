@@ -1,5 +1,7 @@
 .quotes__container {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -16,7 +18,7 @@
 }
 
 .quotes__text::before {
-  color: #ad8026;
+  color: var(--icon-color);
   font-size: 44px;
   vertical-align: middle;
   line-height: 100%;
@@ -32,7 +34,7 @@
 }
 
 .quotes__author {
-  color: #7f7f7f;
+  color: var(--secondary-text-color);
   margin-left: 15px;
   margin-top: 10px;
   font-size: 14px;
@@ -40,7 +42,8 @@
 
 @media (max-width: 768px) {
   .quotes__container {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .quotes__quote {
